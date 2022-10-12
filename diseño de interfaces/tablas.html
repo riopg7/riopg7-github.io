@@ -1,0 +1,481 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<style type="text/css">
+		header,nav,main,footer{
+			width:1366px;
+			margin:0px auto;
+		}
+		
+		a:hover {
+ 			 border-bottom: 1px solid;
+ 			 background: #CDFEAA;
+		}
+		header{
+			background-color:#2A1A3E;
+			height:150px;
+		}
+		main{background-color:#211B42;
+			height:auto;
+			padding:30px 0px;
+		}
+		footer{
+			background-color:#261331;
+			height:150px;
+		}
+		footer h6{
+			width:600px;
+			font-size:35px;
+			color:#f7ecdd;
+			height:150px;
+			margin:0px auto;
+			text-align: center;
+		}
+		nav{
+			height:260px;
+			background-color:#593D64;
+		}
+		h2{
+			color:#290F33;
+			font-size:48px;
+			padding:20px 0px;
+		}
+		p{
+			color:#25112A;
+			font-size:20px;
+		}
+		section p{
+			padding:20px 0px;
+		}
+		h1{
+			width:800px;
+			color:#FFFFFF;
+			font-size: 72px;
+			height:150px;
+			margin:0px auto;
+			text-align:center;
+		}
+		section{
+			width:900px;
+			height:auto;
+			background-color:#CEEDE8;
+			margin:30px auto;
+			padding:20px;
+		}
+		li{
+			font-size:24px;
+			color:#2D2B11;
+		}
+		#menu li>a{
+  color:#D9EAED;
+  padding: 50px;
+  display: block;
+  text-decoration: none;
+  min-width: 100px;
+}
+		#menu li>a:hover{
+  color: #000;
+  background-color:#BC8AC3;
+}
+#menu>li{
+  float: left;
+  text-align:center;
+}
+#menu>li>ul{
+  display: none;
+}
+#menu>li:hover>ul {
+  display:block;
+}
+		ul,ol{
+		margin: 50px;
+	}
+	dl{
+		margin: 20px;
+	}
+	dt{
+		margin:10px;
+	}
+	dd{
+		margin:20px 50;
+	}
+	footer{
+		text-align:center;
+	}
+	h4{
+		color:aliceblue;
+	}
+		#t03 tr:nth-child(even){
+			background-color:#D1C8C8;
+		}
+		#t03 tr:nth-child(odd){
+			background-color:#F8BFC0;
+		}
+		#t03 th{
+			background-color:#F5E4E4;
+		}
+		<style type="text/css">
+		table{
+			background-color:#E5DDDD;
+			color:#FF0004;
+		}
+		#t07 tr{
+			background-color:#F8BFC0;
+		}
+		#t07 th{
+			background-color:#F5E4E4;
+		}
+		
+	#t01, #t01 th,#t01 td, #t02, #t02 th, #t02td{
+		border-collapse:collapse;
+		}
+		#t01, #t01 th, #t01 td{
+			border:2px solid #FFC529;
+			padding:5px;
+		}
+		#t01 th{
+			background-color:#B09FA0;
+			color:#C13A3C;
+		}
+		#t02,#t02 th, #t02 td{
+			border:3px solid #f2f2f2;
+			padding:5px;
+			background-color:#FE724C;
+			color:#F2F2F2;
+		}
+		#t06 th{
+			background-color:#F2F2F2;
+			color:#2446B1;
+		}
+		#t06, #t06 td{
+			border:5px;
+			padding:10px;
+			background-color:#2446B1;
+			color:#F2F2F2;
+		}
+	</style>
+	<body>
+		<header>
+			<h1>Tablas en html</h1>
+		</header>
+		<nav>
+			<ul id="menu">
+				<li><a href="formatos_textos2.html">formatos de textos</a></li>
+				<li><a href="listas en html 2.html">listas</a></li>
+				<li><a href="enlances en html.html">enlaces</a></li>
+				<li><a href="tablas.html">tablas</a></li>
+				<li><a href="imagenes.html">imágenes</a></li>
+				<li><a href="Audio.html">Audios</a></li>
+				<li><a href="formularios.html">Formularios</a></li>
+				<li><a href="videos.html">Videos</a></li>
+				<li><a href="../index.html">Index</a></li>
+			</ul>
+		</nav>
+		<main>
+		<section>
+		<h2>Tabla simple</h2>
+		<table border=" 1!">
+		<thead>
+		<tr>
+		<th>Nombre</th>
+		<th>Direccion</th>
+		<th>Telefono</th>
+		</tr>	
+		</thead>	
+		<tbody>
+		<tr>
+			<td>Alan Bocardo</td>
+			<td>Calle Barreal</td>
+			<td>2225892730</td>
+		</tr>
+		<tr>
+			<td>Andres Padilla</td>
+			<td>Camino Real</td>
+			<td>33326375345234</td>
+		</tr>
+		<tr>
+			<td>Carlos Barraza</td>
+			<td>La margarita</td>
+			<td>3252623432</td>
+		</tr>
+		<tr>
+			<td>Luis Enrique</td>
+			<td>Los arcos</td>
+			<td>23426256252344</td>
+		</tr>
+		<tr>
+			<td>Roberto Gomez</td>
+			<td>La vista</td>
+			<td>22256231113</td>
+		</tr>	
+		</tbody>
+		</table>
+  </section>
+		
+  <section>
+		  <h2>Tabla con estilo css</h2>
+		  <table id="t02" border=" 1!">
+		    <thead>
+		      <tr>
+		        <th>Nombre</th>
+		        <th>Direccion</th>
+		        <th colspan="2">Telefonos</th>
+	          </tr>
+	        </thead>
+		    <tbody>
+		      <tr>
+		        <td>Alan Bocardo</td>
+		        <td>Calle Barreal</td>
+		        <td>2225892730</td>
+				<td>2227567632</td>
+	          </tr>
+		      <tr>
+		        <td>Andres Padilla</td>
+		        <td>Camino Real</td>
+		        <td>33326375345234</td>
+				<td>2221347890</td>
+	          </tr>
+		      <tr>
+		        <td>Carlos Barraza</td>
+		        <td>La margarita</td>
+		        <td>3252623432</td>
+				<td>221547795</td>
+	          </tr>
+		      <tr>
+		        <td>Luis Enrique</td>
+		        <td>Los arcos</td>
+		        <td>23426256252344</td>
+				<td>2214377905</td>
+	          </tr>
+		      <tr>
+		        <td>Roberto Gomez</td>
+		        <td>La vista</td>
+		        <td>22256231113</td>
+				<td>2221150476</td>
+	          </tr>
+	        </tbody>
+	      </table>
+  </section>
+  <section>
+		  <h2>Tabla con cebras en vertical</h2>
+		  <table id="t07" border=" 1!">
+		    <thead>
+		      <tr>
+		        <th>Nombre</th>
+		        <td>Direccion</td>
+		        <th colspan="1">Telefonos</th>
+				 <td>Celular</td>
+	          </tr>
+	        </thead>
+		    <tbody>
+		      <tr>
+		        <th>Alan Bocardo</th>
+		        <td>Calle Barreal</td>
+		        <th>2225892730</th>
+		        <td>2227567632</td>
+	          </tr>
+		      <tr>
+		        <th>Andres Padilla</th>
+		        <td>Camino Real</td>
+		        <th>33326375345234</th>
+		        <td>2221347890</td>
+	          </tr>
+		      <tr>
+		        <th>Carlos Barraza</th>
+		        <td>La margarita</td>
+		        <th>3252623432</th>
+		        <td>221547795</td>
+	          </tr>
+		      <tr>
+		        <th>Luis Enrique</th>
+		        <td>Los arcos</td>
+		        <th>23426256252344</th>
+		        <td>2214377905</td>
+	          </tr>
+		      <tr>
+		        <th>Roberto Gomez</th>
+		        <td>La vista</td>
+		        <th>22256231113</th>
+		        <td>2221150476</td>
+	          </tr>
+	        </tbody>
+	      </table>
+  </section>
+		<section>
+		  <h2>Tabla con cebras en horizontal</h2>
+		  <table id="t03" border=" 1!">
+		    <thead>
+		      <tr>
+		        <th>Nombre</th>
+		        <th>Direccion</th>
+		        <th colspan="2">Telefonos</th>
+	          </tr>
+	        </thead>
+		    <tbody>
+		      <tr>
+		        <td>Alan Bocardo</td>
+		        <td>Calle Barreal</td>
+		        <td>2225892730</td>
+		        <td>2227567632</td>
+	          </tr>
+		      <tr>
+		        <td>Andres Padilla</td>
+		        <td>Camino Real</td>
+		        <td>33326375345234</td>
+		        <td>2221347890</td>
+	          </tr>
+		      <tr>
+		        <td>Carlos Barraza</td>
+		        <td>La margarita</td>
+		        <td>3252623432</td>
+		        <td>221547795</td>
+	          </tr>
+		      <tr>
+		        <td>Luis Enrique</td>
+		        <td>Los arcos</td>
+		        <td>23426256252344</td>
+		        <td>2214377905</td>
+	          </tr>
+		      <tr>
+		        <td>Roberto Gomez</td>
+		        <td>La vista</td>
+		        <td>22256231113</td>
+		        <td>2221150476</td>
+	          </tr>
+	        </tbody>
+	      </table>
+  </section>
+	<section>
+		  <h2>Tabla con resaltado flotante</h2>
+		  <table id="t06" border=" 1!">
+		    <thead>
+		      <tr>
+		        <th>Nombre</th>
+		        <th>Direccion</th>
+		        <th colspan="2">Telefonos</th>
+	          </tr>
+	        </thead>
+		    <tbody>
+		      <tr>
+		        <td>Alan Bocardo</td>
+		        <td>Calle Barreal</td>
+		        <td>2225892730</td>
+		        <td>2227567632</td>
+	          </tr>
+		      <tr>
+		        <td>Andres Padilla</td>
+		        <td>Camino Real</td>
+		        <td>33326375345234</td>
+		        <td>2221347890</td>
+	          </tr>
+		      <tr>
+		        <td>Carlos Barraza</td>
+		        <td>La margarita</td>
+		        <td>3252623432</td>
+		        <td>221547795</td>
+	          </tr>
+		      <tr>
+		        <td>Luis Enrique</td>
+		        <td>Los arcos</td>
+		        <td>23426256252344</td>
+		        <td>2214377905</td>
+	          </tr>
+		      <tr>
+		        <td>Roberto Gomez</td>
+		        <td>La vista</td>
+		        <td>22256231113</td>
+		        <td>2221150476</td>
+	          </tr>
+	        </tbody>
+	      </table>
+  </section>
+	<section style="overflow-x:auto">
+	<h2>Tabla Personal (responsiva)</h2>
+		<table id="t05">
+		<thead>
+		<tr>
+			<th>Nombre</th>
+			<th>Puntos</th>
+			<th>Puntos</th>
+			<th>Puntos</th>
+			<th>Puntos</th>
+			<th>Puntos</th>
+			<th>Puntos</th>
+			<th>Puntos</th>
+			<th>Puntos</th>
+			<th>Puntos</th>
+			<th>Puntos</th>
+			<th>Puntos</th>
+			<th>Puntos</th>
+			<th>Puntos</th>
+			<th>Puntos</th>
+			<th>Puntos</th>
+			<th>Puntos</th>
+			</tr>	
+			<tr>
+			<td>Paco</td>
+			<td>56</td>
+			<td>55</td>
+			<td>55</td>
+			<td>56</td>
+			<td>56</td>
+			<td>56</td>
+			<td>56</td>
+			<td>55</td>
+			<td>56</td>
+			<td>44</td>
+			<td>55</td>
+			<td>56</td>
+			<td>44</td>
+			<td>56</td>
+			<td>56</td>
+			<td>56</td>
+			</tr>
+			<tr>
+			<td>Armando</td>
+			<td>56</td>
+			<td>60</td>
+			<td>56</td>
+			<td>55</td>
+			<td>44</td>
+			<td>60</td>
+			<td>56</td>
+			<td>56</td>
+			<td>56</td>
+			<td>56</td>
+			<td>56</td>
+			<td>56</td>
+			<td>56</td>
+			<td>56</td>
+			<td>56</td>
+			<td>56</td>
+			</tr>
+			<tr>
+			<td>Hector</td>
+			<td>56</td>
+			<td>60</td>
+			<td>56</td>
+			<td>55</td>
+			<td>44</td>
+			<td>60</td>
+			<td>56</td>
+			<td>56</td>
+			<td>56</td>
+			<td>56</td>
+			<td>56</td>
+			<td>56</td>
+			<td>56</td>
+			<td>56</td>
+			<td>56</td>
+			<td>56</td>
+			</tr>
+		</thead>
+		</table>
+	</section>
+		</main>
+		<footer>
+		  <h6>Elaborado por Darío Padilla García</h6>
+		</footer>
+	</body>
+</html>
